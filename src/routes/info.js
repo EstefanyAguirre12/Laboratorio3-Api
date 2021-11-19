@@ -4,9 +4,13 @@ const infoSchema = require("../models/info");
 const router = express.Router();
 
 
-// create user
+// create info
 router.post("/infos", (req, res) => {
-    res.send("Create");
+    const info = infoSchema(req.body);
+    info
+      .save()
+      .then((data) => res.json(data))
+      .catch((error) => res.json({ message: error }));
 });
 
 module.exports = router;

@@ -1,0 +1,26 @@
+{
+  "name": "labo3-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstefanyAguirre12/Laboratorio3-Api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstefanyAguirre12/Laboratorio3-Api/issues"
+  },
+  "homepage": "https://github.com/EstefanyAguirre12/Laboratorio3-Api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

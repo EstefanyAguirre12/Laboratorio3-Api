@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 // mongodb connection
 // connect to mongodb
-mongoose.connect('mongodb://suUsuario:suContraseña@localhost:27017/dbLabo?authSource=admin', {
+mongoose.connect('mongodb://estefany:123@localhost:27017/dbLabo?authSource=admin', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(()=>console.log("Conect"));

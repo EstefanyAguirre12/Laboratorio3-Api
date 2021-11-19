@@ -13,4 +13,12 @@ router.post("/infos", (req, res) => {
       .catch((error) => res.json({ message: error }));
 });
 
+// get all users
+router.get("/infos", (req, res) => {
+  infoSchema
+    .find()
+    .then((data) => res.json(data))
+    .catch((error) => res.json({ message: error }));
+});
+
 module.exports = router;

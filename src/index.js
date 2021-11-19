@@ -1,10 +1,14 @@
 const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
+const infoRoute = require("./routes/info");
 
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// middlewares
+app.use("/api", infoRoute);
 
 // routes
 app.get("/", (req, res) => {

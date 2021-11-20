@@ -5,12 +5,11 @@ const router = express.Router();
 
 
 // create info
-router.post("/infos", (req, res) => {
-    const info = infoSchema(req.body);
-    info
-      .save()
-      .then((data) => res.json(data))
-      .catch((error) => res.json({ message: error }));
+router.post("/infos", async (req, res) => {
+    const name = req.body.name;
+    const add = new infoSchema({name: name});
+    await add.save();
+    res.send("Succes");
 });
 
 // get all users
